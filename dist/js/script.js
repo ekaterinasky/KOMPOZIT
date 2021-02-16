@@ -1,4 +1,3 @@
 $(document).ready(function(){
-  $('.carousel__inner').slick();
-});
-  
+  $('.castom__inner').owlCarousel();
+  });

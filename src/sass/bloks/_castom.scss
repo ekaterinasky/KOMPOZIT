@@ -1,0 +1,25 @@
+.castom {
+    background-color: #f9f9f9;
+    padding: 63px 0 101px 0;
+
+    &__slider {
+        margin-top: 63px;
+
+        &_mag {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 143px;
+            height: 124px;
+            background-color: #ffffff;
+
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__inner {
+        display: inline-block;
+    }
+}
