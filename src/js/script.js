@@ -172,6 +172,7 @@ Sim.initialize = function(that) {
 
 new Sim();
 // SlickSlider
+
 $(document).ready(function(){
 	$('.castom__slider').slick({
 		slidesToShow: 6,

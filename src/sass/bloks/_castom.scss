@@ -1,24 +1,25 @@
 .castom {
     padding: 63px 0 101px 0;
-    background-color: #f9f9f9;
-    display: block;
-    margin: 0 auto;
-    width: 1391px;
+    background: #f9f9f9;
+    margin-left: 39px;
+    margin-right: 21px;
+
 
     &__wrapper {
         margin-top: 63px;
+        display: flex;
+        justify-content: center;
     }
 
     &__slider {
         position: relative;
-        padding-left: 36px;
-        padding-right: 32px;
+        display: flex;
+        margin-left: 33px;
+
 
         &_item {
-            position: relative;
-            width: 200px;
-            margin-right: 33px;
-            margin: 0 auto;
+            width: 143px;
+            cursor: pointer;
         }
     }
 
@@ -27,11 +28,22 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        width: 143px;
+        width: 144px;
         height: 124px;
         background-color: #ffffff;
-    }
 
+
+
+        &:hover {
+            background: url('../../img/hover/kamaz_hover.jpg') 50% 50% no-repeat;
+
+        }
+    }
+}
+
+
+.hidden {
+    overflow: hidden;
 }
 
 .slick-track {
