@@ -5,14 +5,14 @@
     &__items {
         margin-top: 63px;
         display: flex;
-        overflow: hidden;
 
 
         &_mag {
-            width: 1035px;
+            position: relative;
+            width: 200px;
             margin-right: 33px;
             margin: 0 auto;
-            /* overflow: hidden;*/
+
         }
 
         &_rectangle {
@@ -23,6 +23,8 @@
             justify-content: center;
             align-items: center;
             margin: 0 auto;
+            cursor: pointer;
+
         }
     }
 

@@ -15,18 +15,21 @@
 <body>
     <header class="header">
 <div class="container">            
-<nav class="header__main">
-<div class="header__logo">
-    <a href="#" class="header__log">Kompozit</a>
- <span>Scientific and production enterprise</span>
+  <nav class="header__main">
+    <div class="header__logo">
+     <a href="#" class="header__log">Kompozit</a>
+      <span>Scientific and production enterprise</span>
 </div>
 
 <ul class="header__navigation">
-<li><a href="#" class="header__navigation_link">О компании</a></li>
-<li><a href="#" class="header__navigation_link">Продукция</a>
+ <li>
+     <a href="#" class="header__navigation_link">О компании</a>
+  </li>
+<li>
+    <a href="#" class="header__navigation_link">Продукция</a>
     <ul class="header__navigation-sub">
         <li><a href="#">Самосмазывающиеся подшипники скольжения</a></li>
-        <li><a href="#">Магнитные материалы</a></li>
+        <li><a href="#promo">Магнитные материалы</a></li>
         <li><a href="#">Спеченные металлические пористые фильтрэлементы</a></li>
         <li><a href="#">Изделия из конструкционных материалов</a></li>
         <li><a href="#">Инструментальные стали</a></li>
@@ -36,28 +39,20 @@
 </ul>
 
 <div class="header__phone">
-<a href="tel:88001111111">8 (800) 111-11-11</a>
+ <a href="tel:88001111111">8 (800) 111-11-11</a>
+  </div>
+   </nav>
 </div>
-</nav>
-</div>
-    </header>
+  </header>
+<main>
 
-    <main>
-        
-<section class="carousel">
-    <div class="carouselka">
-        <div><img src="img/slider/slide_jne.jpg" alt=""></div>
-        <div><img src="img/slider/slide_two.jpg" alt=""></div>
-        <div><img src="img/slider/slide_three.jpg" alt=""></div>
-      </div>
-</section>
-<section class="promo">
+ <section class="promo">
     <div class="container">
         <h1 class="promo__title">Разработка наукоемких технологий в области 
             <span class="promo__title_sub">порошковой металлургии</span></h1>
             <p><span>Композит</span> является научно-инженерным центром, оказывающим услуги в области разработки и внедрения наукоемких технологий 
                 порошковой металлургии и производства технических изделий по ним.</p>
-                <h2 class="promo__subtitle subtitle">Наша продукция</h2>
+                <h2 class="promo__subtitle subtitle" id="promo">Наша продукция</h2>
                 <div class="promo__wrapper">
                     <div class="promo__item">
                         <img src="img/promo/promo_one.jpg" alt="bearing">
@@ -110,9 +105,9 @@
     <h2 class="advant__subtitle subtitle">Преимущества</h2>
     <div class="advant__wrapper">
         <div class="advant__item">
-            <img src="icons/icons_svg/Партии.svg" alt="part">
+            <img src="icons/icons_svg/Партии.svg" alt="size">
             <div class="advant__text advant__text_one">
-                Принимаем заказы<br> от 1 детали до<br> массового производства
+                Принимаем заказы<br> от 1 детали до массового производства
             </div>
         </div>
         <div class="advant__item">
@@ -179,8 +174,29 @@
 
     </main>
 
-    <footer class="footer">
-
+<footer class="footer">
+ <div class="container">
+    <div class="footer__wrapper">
+        <div class="header__logo">
+            <a href="#" class="header__log">Kompozit</a>
+              <span>Scientific and production enterprise</span>
+                <a class="footer__social" href="#"><img src="img/social.png" alt=""></a>
+        </div>
+<div class="footer__phone">
+    <a href="tel:88001111111">8 (800) 111-11-11</a>
+       <a class="footer__bottom" href="tel:88001111111">8 (800) 111-11-11</a>
+    </div>
+  <div class="footer__about">
+        <a href="#">О компании</a>
+            <a class="footer__bottom" href="#">Продукция</a>
+        </div>
+        <div class="footer__about footer__contacts">
+            <a href="#">Порошковая металлургия</a>
+            <a class="footer__bottom" href="#">Контакты</a>
+    </div>
+        <a class="footer__policy" href="#">Политика конфеденциальности</a>
+</div>
+ </div>
     </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

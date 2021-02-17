@@ -73,9 +73,10 @@
 
         &-sub {
             position: absolute;
+            padding: 35px;
             width: 479px;
             min-height: 309px;
-            background-color: #ffffff;
+            background: url(../img/hover/bg_menu.jpg) center center/cover no-repeat;
             display: none;
 
             li {
