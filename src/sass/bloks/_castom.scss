@@ -1,31 +1,64 @@
 .castom {
-    background-color: #f9f9f9;
     padding: 63px 0 101px 0;
+    background-color: #f9f9f9;
+    display: block;
+    margin: 0 auto;
+    width: 1391px;
 
-    &__items {
+    &__wrapper {
         margin-top: 63px;
-        display: flex;
+    }
 
+    &__slider {
+        position: relative;
+        padding-left: 36px;
+        padding-right: 32px;
 
-        &_mag {
+        &_item {
             position: relative;
             width: 200px;
             margin-right: 33px;
             margin: 0 auto;
-
-        }
-
-        &_rectangle {
-            width: 143px;
-            height: 124px;
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            cursor: pointer;
-
         }
     }
 
+    &__mag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 143px;
+        height: 124px;
+        background-color: #ffffff;
+    }
+
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-arrow {
+    position: absolute;
+    margin-top: -20px;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 22px;
+    height: 40px;
+    border: none;
+}
+
+.slick-arrow.slick-prev {
+    background: url('../../icons/slider_footer/prev.png') 0 0 no-repeat;
+    left: 80px;
+}
+
+.slick-arrow.slick-next {
+    background: url('../../icons/slider_footer/next.png') 0 0 no-repeat;
+    right: 80px;
 }
