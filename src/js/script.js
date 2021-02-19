@@ -176,6 +176,6 @@ new Sim();
 $(document).ready(function(){
 	$('.castom__slider').slick({
 		slidesToShow: 6,
-		autoplay: false,
+		autoplay: true,
 	});
   });

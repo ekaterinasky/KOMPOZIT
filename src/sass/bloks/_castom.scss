@@ -1,31 +1,54 @@
 .castom {
     padding: 63px 0 101px 0;
     background: #f9f9f9;
-    margin-left: 39px;
-    margin-right: 21px;
-
-
-    &__wrapper {
-        margin-top: 63px;
-        display: flex;
-        justify-content: center;
-        min-width: 0;
-    }
 
     &__slider {
         position: relative;
-        display: flex;
-        margin-left: 33px;
-        min-width: 0;
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 60px;
+        padding-left: 36px;
 
 
-        &_item {
-            width: 143px;
-            cursor: pointer;
+        .slick-track {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .slick-list {
+            overflow: hidden;
+        }
+
+
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            font-size: 0;
+            width: 22px;
+            height: 40px;
+            border: none;
+            outline: none;
+        }
+
+        .slick-arrow.slick-prev {
+            background: url('../../icons/slider_footer/prev.png') 0 0 no-repeat;
+            left: -20px;
+        }
+
+        .slick-arrow.slick-next {
+            background: url('../../icons/slider_footer/next.png') 0 0 no-repeat;
+            right: -20px;
         }
     }
 
-    &__mag {
+    &__slide {
+        position: relative;
+        text-align: center;
+        z-index: 10;
+        outline: none;
         display: flex;
         min-width: 0;
         justify-content: center;
@@ -34,56 +57,58 @@
         width: 144px;
         height: 124px;
         background-color: #ffffff;
+        margin-right: 33px;
+        cursor: pointer;
 
+        img {
+            object-fit: cover;
+        }
 
+        &_kamaz {
+            &:after {
+                background: url('../../icons/slider_footer/kamaz.png') 50% 50% no-repeat;
+            }
+        }
 
+        &_urgtu {
+            &:after {
+                background: url('../../icons/slider_footer/urgtu.png') 50% 50% no-repeat;
+            }
+        }
+
+        &_klever {
+            &:after {
+                background: url('../../icons/slider_footer/klever.png') 50% 50% no-repeat;
+            }
+        }
+
+        &_four {
+            &:after {
+                background: url('../../icons/slider_footer/slide_four.png') 50% 50% no-repeat;
+            }
+        }
+
+        &_kizlyar {
+            &:after {
+                background: url('../../icons/slider_footer/kizlyar.png') 50% 50% no-repeat;
+            }
+        }
 
         &:hover {
-            background: url('../../img/hover/kamaz_hover.jpg') 50% 50% no-repeat;
-
+            &:after {
+                opacity: 0;
+            }
         }
     }
 }
 
-
-.hidden {
-    overflow: hidden;
-}
-
-.slick-track {
-    display: flex;
-}
-
-.slick-list {
-    width: 100%;
-    overflow: hidden;
-}
-
-.slick-arrow {
-    position: absolute;
-    margin-top: -20px;
-    top: 50%;
-    z-index: 10;
-    font-size: 0;
-    width: 22px;
-    height: 40px;
-    border: none;
-}
-
-.slick-arrow.slick-prev {
-    background: url('../../icons/slider_footer/prev.png') 0 0 no-repeat;
-    left: 80px;
-}
-
-.slick-arrow.slick-next {
-    background: url('../../icons/slider_footer/next.png') 0 0 no-repeat;
-    right: 80px;
-}
-
-.slick-slide {
-    width: 100%;
-}
-
-.slick-current {
-    width: 100%;
+.after {
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
 }
