@@ -15,34 +15,6 @@
     }
 
 
-
-    &__social {
-        position: relative;
-        display: block;
-        margin-top: 29px;
-
-        img {
-            object-fit: cover;
-        }
-
-        &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: url('../../img/social.png') no-repeat;
-        }
-
-        &:hover {
-            &:after {
-                opacity: 0;
-            }
-        }
-
-    }
-
     &__phone {
         width: 150px;
         font-size: 18px;
@@ -84,6 +56,61 @@
     &__bottom {
         display: block;
         margin-top: 24px;
+    }
+
+    &__wrap {
+        a {
+            background-image: url('../img/spritesheet.png');
+            background-repeat: no-repeat;
+            height: 24px;
+            width: 24px;
+            margin-right: 10px;
+            display: inline-block;
+            margin-top: 38px;
+            margin-right: 1px;
+        }
+
+        &_facebook {
+            background-position: -5px -5px;
+
+            &:hover {
+                background-position: -5px -38px;
+            }
+        }
+
+        &_vk {
+            background-position: -35px -5px;
+
+            &:hover {
+                background-position: -37px -38px;
+            }
+        }
+
+        &_ok {
+            background-position: -67px -5px;
+
+            &:hover {
+                background-position: -67px -38px;
+            }
+        }
+
+        &_youtube {
+            background-position: -97px -5px;
+
+            &:hover {
+                background-position: -97px -38px;
+            }
+        }
+
+        &_instagram {
+            background-position: -127px -5px;
+
+            &:hover {
+                background-position: -127px -38px;
+            }
+        }
+
+
     }
 
 }
