@@ -46,14 +46,8 @@
 
     &__slide {
         position: relative;
-        text-align: center;
         z-index: 10;
-        outline: none;
-        display: flex;
         min-width: 0;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
         width: 144px;
         height: 124px;
         background-color: #ffffff;
@@ -111,4 +105,10 @@
         bottom: 0;
         left: 0;
     }
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
